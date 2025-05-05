@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - MangaVerse</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="manga">
+        <nav class="navbar">
+            <img src="../IMAGES/MangaVerse.png" class="logo" alt="MangaVerse Logo">
+            <ul class="nav-links">
+                <li><a href="../index.html" class="nav-button">Home</a></li>
+                <li><a href="./aboutus.html" class="nav-button">About Us</a></li>
+                <li><a href="./products.html" class="nav-button">Products</a></li>
+                <li><a href="./enquiry.html" class="nav-button">Enquiry</a></li>
+                <li><a href="./contactus.html" class="nav-button active">Contact Us</a></li>
+            </ul> 
+        </nav>
+
+        <div class="contact-section">
+            <div class="contact-map">
+                <div class="map-placeholder">
+                    <!-- In a real site, you would embed a Google Map here -->
+                    <img src="../IMAGES/map-placeholder.jpg" alt="Our Location">
+                    <div class="map-overlay">📍 Click to view interactive map</div>
+                </div>
+                
+                <div class="location-info">
+                    <h3>Our <span class="highlight">Headquarters</span></h3>
+                    <div class="address">
+                        <p>📌 MangaVerse Central</p>
+                        <p>123 Otaku Street</p>
+                        <p>Tokyo, Japan 100-0001</p>
+                    </div>
+                    
+                    <div class="business-hours">
+                        <h4>Business Hours</h4>
+                        <p>Monday-Friday: 9AM - 6PM JST</p>
+                        <p>Saturday: 10AM - 4PM JST</p>
+                        <p>Sunday: Closed</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form-container">
+                <h2>Get in <span class="highlight">Touch</span></h2>
+                <div class="underline"></div>
+                
+                <form class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group half-width">
+                            <label for="contact-name">Name</label>
+                            <input type="text" id="contact-name" required>
+                            <div class="input-underline"></div>
+                        </div>
+                        
+                        <div class="form-group half-width">
+                            <label for="contact-email">Email</label>
+                            <input type="email" id="contact-email" required>
+                            <div class="input-underline"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contact-subject">Subject</label>
+                        <input type="text" id="contact-subject" required>
+                        <div class="input-underline"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contact-message">Message</label>
+                        <textarea id="contact-message" rows="5" required></textarea>
+                        <div class="input-underline"></div>
+                    </div>
+                    
+                    <div class="form-footer">
+                        <button type="submit" class="submit-button">Send Message</button>
+                        <div class="form-social">
+                            <p>Or connect with us:</p>
+                            <div class="social-icons">
+                                <a href="#" class="social-icon">📘</a>
+                                <a href="#" class="social-icon">📸</a>
+                                <a href="#" class="social-icon">🐦</a>
+                                <a href="#" class="social-icon">📹</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="department-contacts">
+                <h3>Department <span class="highlight">Contacts</span></h3>
+                <div class="department-cards">
+                    <div class="department-card">
+                        <h4>📦 Customer Support</h4>
+                        <p>support@mangaverse.com</p>
+                        <p>+81 3-1234-5678</p>
+                    </div>
+                    
+                    <div class="department-card">
+                        <h4>💼 Business Inquiries</h4>
+                        <p>business@mangaverse.com</p>
+                        <p>+81 3-1234-5679</p>
+                    </div>
+                    
+                    <div class="department-card">
+                        <h4>📚 Publisher Relations</h4>
+                        <p>publishers@mangaverse.com</p>
+                        <p>+81 3-1234-5680</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>

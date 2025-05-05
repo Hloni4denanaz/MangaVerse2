@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - MangaVerse</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="manga">
+        <nav class="navbar">
+            <img src="../IMAGES/MangaVerse.png" class="logo" alt="MangaVerse Logo">
+            <ul class="nav-links">
+                <li><a href="../index.html" class="nav-button">Home</a></li>
+                <li><a href="./aboutus.html" class="nav-button">About Us</a></li>
+                <li><a href="./products.html" class="nav-button active">Products</a></li>
+                <li><a href="./enquiry.html" class="nav-button">Enquiry</a></li>
+                <li><a href="./contactus.html" class="nav-button">Contact Us</a></li>
+            </ul> 
+        </nav>
+
+        <div class="products-section">
+            <h2>Our <span class="highlight">Collection</span></h2>
+            <div class="underline"></div>
+            
+            <div class="category-tabs">
+                <button class="tab-button active" data-category="all">All Genres</button>
+                <button class="tab-button" data-category="shonen">Shonen</button>
+                <button class="tab-button" data-category="shoujo">Shoujo</button>
+                <button class="tab-button" data-category="seinen">Seinen</button>
+                <button class="tab-button" data-category="manhwa">Manhwa</button>
+            </div>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Search manga titles...">
+                <button class="search-button">🔍</button>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card" data-category="shonen">
+                    <div class="product-badge">Bestseller</div>
+                    
+                    <div class="product-info">
+                        <h3>Demon Slayer</h3>
+                        <p class="product-author">Koyoharu Gotouge</p>
+                        <div class="product-rating">★★★★★ <span>(4,302)</span></div>
+                        <p class="product-price">$9.99 <span class="original-price">$12.99</span></p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card" data-category="shoujo">
+                    
+                    <div class="product-info">
+                        <h3>Fruits Basket</h3>
+                        <p class="product-author">Natsuki Takaya</p>
+                        <div class="product-rating">★★★★☆ <span>(2,145)</span></div>
+                        <p class="product-price">$8.49</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card" data-category="seinen">
+                    <div class="product-badge">New</div>
+                    
+                    <div class="product-info">
+                        <h3>Berserk</h3>
+                        <p class="product-author">Kentaro Miura</p>
+                        <div class="product-rating">★★★★★ <span>(5,678)</span></div>
+                        <p class="product-price">$14.99</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="product-card" data-category="manhwa">
+                    
+                    <div class="product-info">
+                        <h3>Solo Leveling</h3>
+                        <p class="product-author">Chugong</p>
+                        <div class="product-rating">★★★★★ <span>(7,891)</span></div>
+                        <p class="product-price">$11.99</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Product 5 -->
+                <div class="product-card" data-category="shonen">
+                    
+                    <div class="product-info">
+                        <h3>My Hero Academia</h3>
+                        <p class="product-author">Kohei Horikoshi</p>
+                        <div class="product-rating">★★★★☆ <span>(3,456)</span></div>
+                        <p class="product-price">$10.49</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Product 6 -->
+                <div class="product-card" data-category="shoujo">
+                    <div class="product-badge">Sale</div>
+                    
+                    <div class="product-info">
+                        <h3>Nana</h3>
+                        <p class="product-author">Ai Yazawa</p>
+                        <div class="product-rating">★★★★★ <span>(2,987)</span></div>
+                        <p class="product-price">$7.99 <span class="original-price">$10.99</span></p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pagination">
+                <button class="page-button active">1</button>
+                <button class="page-button">2</button>
+                <button class="page-button">3</button>
+                <button class="page-button">Next →</button>
+            </div>
+        </div>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>
