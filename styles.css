@@ -1,4 +1,4 @@
-/* Base Styles */
+
 :root {
     --primary: #FF4D4D;
     --secondary: #FF9E4D;
@@ -26,7 +26,7 @@ body {
     position: relative;
 }
 
-/* Navigation */
+
 .navbar {
     display: flex;
     align-items: center;
@@ -94,7 +94,7 @@ body {
     left: 100%;
 }
 
-/* Hero Content */
+
 .hero-content {
     display: flex;
     align-items: center;
@@ -157,7 +157,7 @@ body {
     color: rgba(255, 255, 255, 0.8);
 }
 
-/* CTA Buttons */
+
 .cta-buttons {
     display: flex;
     gap: 20px;
@@ -202,14 +202,14 @@ body {
     color: white;
 }
 
-/* Animations */
+
 @keyframes float {
     0% { transform: translateY(0px); }
     50% { transform: translateY(-15px); }
     100% { transform: translateY(0px); }
 }
 
-/* Responsive Design */
+
 @media (max-width: 1024px) {
     .hero-content {
         flex-direction: column;
@@ -257,7 +257,7 @@ body {
     }
 }
 
-/* ===== About Us Page Styles ===== */
+
 .about-section {
     padding: 60px 8%;
 }
@@ -360,7 +360,7 @@ body {
     margin-bottom: 20px;
 }
 
-/* ===== Products Page Styles ===== */
+
 .products-section {
     padding: 60px 8%;
 }
@@ -528,7 +528,7 @@ body {
     color: white;
 }
 
-/* ===== Enquiry Page Styles ===== */
+
 .enquiry-section {
     display: flex;
     padding: 60px 8%;
@@ -690,7 +690,7 @@ body {
     transform: translateY(-5px);
 }
 
-/* ===== Contact Us Page Styles ===== */
+
 .contact-section {
     padding: 60px 8%;
 }
@@ -796,13 +796,13 @@ body {
     background: rgba(255, 77, 77, 0.1);
 }
 
-/* ===== Active State for Navigation ===== */
+
 .nav-button.active {
     color: var(--primary);
     font-weight: 600;
 }
 
-/* ===== Responsive Adjustments ===== */
+
 @media (max-width: 1024px) {
     .about-content, 
     .enquiry-section,
@@ -836,4 +836,60 @@ body {
         flex-direction: column;
         align-items: flex-start;
     }
+}
+.form-group input.error,
+.form-group textarea.error,
+.form-group select.error {
+    border-bottom-color: var(--primary) !important;
+}
+
+.form-response {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    min-height: 20px;
+    transition: all 0.3s ease;
+}
+
+
+.product-card {
+    transition: all 0.3s ease;
+    opacity: 1;
+}
+
+
+.highlight-match {
+    background-color: rgba(255, 157, 77, 0.3);
+}
+
+
+.map-placeholder {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.map-placeholder:hover {
+    transform: scale(1.02);
+}
+
+
+.tab-content {
+    transition: all 0.3s ease;
+}
+
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loading-spinner {
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top: 3px solid var(--primary);
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
 }
